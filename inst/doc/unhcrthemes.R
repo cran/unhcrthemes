@@ -16,9 +16,6 @@ knitr::opts_chunk$set(
 library(ggplot2)
 library(unhcrthemes)
 
-# Load Lato
-import_lato()
-
 # Create some data
 df <- data.frame(
   date = factor(rep(2010:2020, 2)),

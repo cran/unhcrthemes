@@ -1,7 +1,7 @@
 Package: unhcrthemes
 Type: Package
 Title: UNHCR 'ggplot2' Theme and Colour Palettes
-Version: 0.6.1
+Version: 0.6.2
 Authors@R: 
     c(person("Cédric", "Vidonne",
              email = "cedric@vidonne.me",
@@ -27,10 +27,10 @@ VignetteBuilder: knitr
 Config/Needs/website: unhcr-dataviz/unhcrtemplate
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2023-11-20 13:42:50 UTC; cvidonne
+Packaged: 2023-11-27 08:47:14 UTC; cvidonne
 Author: Cédric Vidonne [aut, cre],
   Ahmadou Dicko [aut],
   UNHCR [cph]
 Maintainer: Cédric Vidonne <cedric@vidonne.me>
 Repository: CRAN
-Date/Publication: 2023-11-20 19:40:03 UTC
+Date/Publication: 2023-11-27 09:00:02 UTC
