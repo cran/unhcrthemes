@@ -10,14 +10,20 @@
 #' @param palette If a string, will use that named palette. If a number, will
 #'   index into the list of palettes of appropriate `type`
 #' @param direction Sets the order of colors in the scale. If 1, the default,
-#'   colors are as output by [unhcr_pal()]. If -1, the order of colors is reversed
-#' @param nmax Maximum number of different colors the palette should contain. If not provided, is calculated automatically
-#'  from the data.
-#' @param order Numeric vector listing the order in which the colors should be used. Default is \code{1:nmax}.
-#' @param ... Other arguments passed on to [discrete_scale()] or
-#' [continuous_scale()] to control name, limits, breaks, labels and so forth
+#' colors are as output by [unhcr_pal()]. If -1, the order of colors is reversed
+#' @param nmax Maximum number of different colors the palette should contain.
+#' If not provided, is calculated automatically from the data.
+#' @param order Numeric vector listing the order in which the colors
+#' should be used. Default is \code{1:nmax}.
+#' @param ... Other arguments passed on to
+#' \code{\link[ggplot2:discrete_scale]{discrete_scale}} or
+#' \code{\link[ggplot2:continuous_scale]{continuous_scale}}
+#' to control name, limits, breaks, labels and so forth
+#'
+#' @seealso \code{\link[scales:gradient_n_pal]{gradient_n_pal}}
 #'
 #' @importFrom scales gradient_n_pal
+#' @importFrom ggplot2 discrete_scale continuous_scale
 #'
 #' @return A discrete, continuous or binned `Scale` object
 #'
@@ -42,9 +48,9 @@ scale_color_unhcr_c <- function(..., type = "sequential",
     direction = direction
   )(256)
 
-  continuous_scale("colour",
-    "unhcr_continuous",
-    gradient_n_pal(pal),
+  continuous_scale(
+    aesthetics = "colour",
+    palette = gradient_n_pal(pal),
     na.value = na.value,
     guide = guide,
     ...
@@ -67,9 +73,9 @@ scale_color_unhcr_d <- function(..., type = "qualitative",
     direction = direction
   )
 
-  discrete_scale("colour",
-    "unhcr_discrete",
-    pal,
+  discrete_scale(
+    aesthetics = "colour",
+    palette = pal,
     na.value = na.value,
     ...
   )
@@ -92,9 +98,9 @@ scale_color_unhcr_b <- function(..., type = "qualitative",
     direction = direction
   ))
 
-  binned_scale("colour",
-    "unhcr_binned",
-    pal,
+  binned_scale(
+    aesthetics = "colour",
+    palette = pal,
     na.value = na.value,
     guide = guide,
     ...
@@ -129,9 +135,9 @@ scale_fill_unhcr_c <- function(..., type = "sequential",
     direction = direction
   )(256)
 
-  continuous_scale("fill",
-    "unhcr_continuous",
-    gradient_n_pal(pal),
+  continuous_scale(
+    aesthetics = "fill",
+    palette = gradient_n_pal(pal),
     na.value = na.value,
     guide = guide,
     ...
@@ -154,9 +160,9 @@ scale_fill_unhcr_d <- function(..., type = "qualitative",
     direction = direction
   )
 
-  discrete_scale("fill",
-    "unhcr_discrete",
-    pal,
+  discrete_scale(
+    aesthetics = "fill",
+    palette = pal,
     na.value = na.value,
     ...
   )
@@ -179,9 +185,9 @@ scale_fill_unhcr_b <- function(..., type = "qualitative",
     direction = direction
   ))
 
-  binned_scale("fill",
-    "unhcr_binned",
-    pal,
+  binned_scale(
+    aesthetics = "fill",
+    palette = pal,
     na.value = na.value,
     guide = guide,
     ...
