@@ -1,9 +1,9 @@
-986d5777ee692223d607276220839ed8 *DESCRIPTION
+c7395ed70ec177add9c63f062e2dce24 *DESCRIPTION
 ca2e7446d1897a61eb22b63599b8be21 *LICENSE
-2cdb339161dd5fc1011a2c4737061b9a *NAMESPACE
-26a56874276a6cdc686f1a5f92346cc5 *NEWS.md
+a7216190818e33142ac2116921d7f886 *NAMESPACE
+918a0edc7a7ede8cfd0d92419444a54d *NEWS.md
 ed75226cd2e3ab65f559a498951af61e *R/display_unhcr_pal.R
-c3a4b791d76d929e0d86cd2a8608556d *R/lato.R
+52afeb5b210bb945aa79ed97a1a01d12 *R/lato.R
 2436d96820b1cb9d7fd5db368d5af283 *R/palettes.R
 293f4a967cdf8317311e17859772d460 *R/scales.R
 8ce7533a0c218c15ddcefe5a263bafc2 *R/sysdata.rda
@@ -30,7 +30,6 @@ cad20ff73c97796d2a3f49dbf20264a7 *man/figures/README-scale-plot-1.png
 3324fa787677ab0813bee4735519ea9d *man/figures/logo.svg
 819705f3d58c5a94c129c3573215821c *man/import_lato.Rd
 76ebe0f8b291d5b18f19aa5e0aae0dff *man/lato_installed.Rd
-f12870021f580307b7df5ae9b9e66a05 *man/lato_registered.Rd
 e430c3a2a7eb0f8ddbb2bf45cb3beda8 *man/rmdfragments/unhcr_tools.Rmd
 dbafaeb3925d26345466e1890cfeaec6 *man/theme_unhcr.Rd
 9d3f96da5ed8ba7dd5f2f94ad9d7824c *man/unhcr_pal.Rd
